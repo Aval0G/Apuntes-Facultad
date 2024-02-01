@@ -1,0 +1,10 @@
+TTL: 
+MR´: 0 log 0v
+MR: 1 log 5v
+
+
+Ruido electrico: se manifiesta como brincos o pasos hay muchas cosas que se pueden repetir
+
+Primero armen su osilador dy desue su registro de desplazamiento. Despues introduzcan el pulso al registro y registren su desplazamiento
+Control de modo.
+¿para que es el circuito 74192? es un contador de 4 bits que cuenta de 0 a 15

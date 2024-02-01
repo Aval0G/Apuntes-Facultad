@@ -1,0 +1,80 @@
+Hombre: ser pensante que con el hecho de nacer tiene obligaciones y derechos.
+
+Interaccion social: La relacion entre 2 y mas individuos que comparten ideas y acciones.
+
+Sociedad: Conjunto de personas que interactuan entre si y desarollan en un territorio comun buscando su identidad individual.
+
+Grupo social: Conjunto de personas que comparten una identidad comun.
+
+Dinamica social: la sociedad siempre es cambiante, nunca se queda quieto.
+
+Derecho: es el conjunto de normas en la sociedad que regula la conducta humana para que haya PAZ.
+El derecho nace de grecia y se perfecciona en roma.
+
+Estado: es el conjunto de instituciones que determinan y conforman el poder y la aplicacion del derecho.
+
+Pacto federal: Hay 32 estados soberanos donde se adiministran los recursos para todos
+
+Estado federal: los 32 estados de la republica mexicana.
+Se divide en 3 poderes:
+Legislativo: Elabora las leyes. - Camara de diputados y senadores.
+Ejecutivo: Administra los recursos - Presidente
+Judicial: Aplica las leyes. - Suprema corte de justicia de la nacion.
+
+Estado estatal: se trata del gobierno de cada estado.
+Se divide en 3 poderes:
+Ejecutivo: Gobernador
+Legislativo: Camara de diputados del estado.
+Judicial: Magistrados y jueces. 
+
+  Moral: los valores que tiene cada uno
+      es incoercible (no se puede obligar a nadie a ser moral) y es interior, autonoma e unilateral.
+  Derecho:
+      es coercible (se puede obligar a alguien a cumplir con el derecho) y es exterior, heteronoma y bilateral.
+
+Fuentes del derecho: son los medios de donde surgen las leyes y normas.
+    -Fuentes historicas: como se crearon las leyes en el pasado.
+    -Fuentes reales: como se crean las leyes en la actualidad.
+    -Fuentes formales: como se crea la ley. 
+    
+Legislativo: Iniciativa, discusión, aprobación, sanción, publicación e inicio de vigencia.
+Jurisprudencia: cuando 5 casos se resuelven de la misma manera, se crea una jurisprudencia.
+Costumbre: es una practica social que se repite en el tiempo y se convierte en ley
+Normas individualizadas: son las que se aplican a un grupo en particular o persona en particular (reglamentos escolares).
+
+Principios generales del derecho: son los principios que se aplican a todos cuando no existe una ley 
+      -Quien puede lo mas, puede lo menos
+      -Nadie esta obligado a lo imposible
+      -Lo no prohibido, esta permitido
+      -El que afirma, debe probar
+
+Sociedad de la informacion: la sociedad actual, donde la informacion es el recurso mas importante (medios digitales).
+
+Clasificacion de derecho: publico y privado.
+
+  +Publico:   
+    Penal: trata de regular las conductas antisociales e impone penas.
+    Constiucional: regula la organizacion del estado y la constitucion.
+    Administrativo: regula las relaciones entre el estado y los particulares.
+    Fiscal: regula las contribuciones y los impuestos.
+    Administrativo: regula las relaciones entre el estado o Administrativos con los particulares.
+    Electoral: regula las elecciones, los partidos politicos y los candidatos.
+    Internacional publica: regula relaciones entre 2 o mas paises.
+
+  +Privado:
+    Internacional privada: regula las relaciones entre empresas de diferentes paises.
+    Civil: regula las relaciones entre particulares y su patrimonio.
+    Familiar: regula las relaciones entre familiares.
+    Mercantil: regula las relaciones entre comerciantes.
+
+  +Social:
+    Laboral: regula las relaciones entre trabajadores y patrones.
+    Agrario: regula las relaciones entre campesinos y el estado.
+    Seguridad Social: regula las relaciones entre trabajadores y el seguro.
+
+  +Especial: //POSIBLEMENTE MAL
+    Informatico: regula las relaciones entre los usuarios de internet.
+    Tecnologico: regula las relaciones entre los usuarios de la tecnologia.
+    Bio-reproduccion: regula las relaciones entre los usuarios de la reproduccion asistida.
+
+El termino Derecho Informatico fue acuñado por Wilhelm Steinmüller en 1970, en Alemania.
