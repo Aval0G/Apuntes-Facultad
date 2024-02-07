@@ -1,1 +1,24 @@
-Sistemas embebidos
+                                                        Sistemas embebidos
+
+¿Qué es? combinacion de hardware y software de computadora,
+sumado tal vez a algunas piezas mecanicas o de otro tipo, diseñado para realizar una tarea especifica.
+
+                Un sistema embebidos siempre lleva un
+
+\*Microcontrolador: es un circuito integrado programable, capaz de ejecutar las ordenes grabadas en su memoria.
+contienen una Unidad Aritmetico Logica (ALU), memoria, puertos de entrada/salida, temporizadores, contadores, osciladores, etc.
+
+\*Microprocesador: es un circuito integrado que contiene los ya instrucciones programadas en su memoria.
+
+_Software de control_
+
+_Memoria para almacenar el programa_
+
+                Diferencia entre microcontrolador y microprocesador
+
+El microprocesador es un circuito integrado que contiene las funciones de la unidad central de procesamiento (CPU)de un ordenador.
+Un microcontrolador es un circuito integrado programable que contiene un computador completo pero con prestaciones limitadas que no se pueden modificar.
+
+                Areas de aplicación:
+
+_Aeronautica_ _Electrodomesticos_ _Equipo Medico_ _Comunicaciones(Satelites, Telefonos, Radios, etc)_ _Entretenimiento(Maquinas de Juego, etc)_
