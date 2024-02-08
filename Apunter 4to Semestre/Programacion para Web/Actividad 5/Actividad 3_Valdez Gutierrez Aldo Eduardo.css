@@ -1,0 +1,37 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+body {
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    position:relative;
+    padding: 1px;
+    text-align: center;
+}
+
+#color{
+    color: red;
+}
+
+#background{
+    background-color: yellow;
+}
+
+#family{
+    font-family: Arial, sans-serif;
+}
+
+#size{
+    font-size: 20px;
+}

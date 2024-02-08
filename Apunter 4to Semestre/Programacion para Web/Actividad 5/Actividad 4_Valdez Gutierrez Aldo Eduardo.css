@@ -1,0 +1,68 @@
+body{
+    margin: 2px;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+label, input {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+h4 {
+    padding-top: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#formulario {
+    margin: 0 auto;
+    padding: 10px; 
+    width: 80%; 
+    max-width: 500px; 
+    align-items: center;
+}
+
+#formulario label {
+    display: inline-block;
+    width: 30%; 
+    text-align: right; 
+    margin-right: 2%; 
+}
+
+#formulario input {
+    display: inline-block; 
+    width: 50%;
+}
+
+#formulario .botones {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+input[type="submit"], input[type="reset"] {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
