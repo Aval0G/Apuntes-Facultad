@@ -1,0 +1,49 @@
+        Probabilidad y Estadistica 02/08/24
+
+Espacio Muestral: Se trata la totalidad de las posibles salidas de un experimento aleatorio. Se denota con la letra S.
+
+Eventos aleatorios normalmente se denotan con mayusculas: A,B,C, etc.
+
+El numero de puntos muestrales de S se le presenta por N(S)
+
+Evento Seguro: Siempre se verifica el evento despues del aleatorio
+Evento Imposible: No es posible que suceda el evento por el espacio muestral
+
+Ejemplo:
+
+Experimento: Se lanza una moneda 3 veces
+
+Espacio Muestral: S = {CCC, CCE, CEC, CEE, ECC, ECE, EEC, EEE}
+
+N(S) = 2^3 = 8
+
+Evento simple:
+Que salgan tres soles: A = {CCC} N(A) = 1
+
+Evento compuesto:
+Que salgan dos soles: B = {CCE, CEC, ECC} N(B) = 3
+
+______________________________________________________________________________________________________________
+|Operacion       |   Expresion           |   Descripcion                                                      |
+|Union           |   A U B               |   Union de los eventos A y B (Sucede A o B o ambos)                | 
+|Interseccion    |   A ∩ B               |   Interseccion de los eventos A y B (Sucede A y B al mismo tiempo) |
+|Diferencia      |   A - B               |   La diferencia de los eventos A y B (Sucede A pero no B)          |
+|_____________________________________________________________________________________________________________|
+
+
+Probabilidad
+
+              N(A) 
+    P(A) =    -----  (2)
+              N(S)
+
+             NCF
+    P(A) =   -----    (1)
+             NCT
+
+Donde:
+    P(A) = Probabilidad del evento A
+    N(A) = Numero de puntos muestrales del evento A
+    N(S) = Numero de puntos muestrales del espacio muestral
+    NCF  = Numero de casos favorables
+    NCT  = Numero de casos totales
