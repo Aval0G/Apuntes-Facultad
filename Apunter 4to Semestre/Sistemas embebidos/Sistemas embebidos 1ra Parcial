@@ -22,3 +22,24 @@ Un microcontrolador es un circuito integrado programable que contiene un computa
                 Areas de aplicación:
 
 _Aeronautica_ _Electrodomesticos_ _Equipo Medico_ _Comunicaciones(Satelites, Telefonos, Radios, etc)_ _Entretenimiento(Maquinas de Juego, etc)_
+
+                                                        Sistemas embebidos 02/09/2024
+
+                Partes principales de un microcontrolador
+
+
+*Procesador:
+*Memoria no volatil:
+*Memoria de lectura y escritura:
+*Lineas de E/S para los perifericos:
+-Comunicacion paralelo: es un tipo de comunicacion en la que los bits de datos se transmiten simultaneamente en varios canales.
+-Comunicacion serie: es un tipo de comunicacion en la que los bits de datos se transmiten uno detras de otro en un solo canal.
+-Puertas de comunicacion (I2C, USB, etc):
+*Recursos Auxiliares:
+-Circuito de reloj:
+-Temporizadores:
+-Perro guardian (Watchdog):
+-Convertidor A/D:
+-Comparadores analogicos:
+-Proteccion ante fallos de alimentacion:
+-Estado de reposo o bajo consumo:
