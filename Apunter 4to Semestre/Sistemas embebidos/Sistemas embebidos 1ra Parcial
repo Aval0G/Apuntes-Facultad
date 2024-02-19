@@ -43,3 +43,18 @@ _Aeronautica_ _Electrodomesticos_ _Equipo Medico_ _Comunicaciones(Satelites, Tel
 -Comparadores analogicos:
 -Proteccion ante fallos de alimentacion:
 -Estado de reposo o bajo consumo:
+
+
+Arquitectura de computadoras: es un arreglo funcional de los elementos de proceso en una computadora digital
+
+Arquitectura Von Neumann: es una arquitectura de computadora que se caracteriza por tener un unico bus de datos que es utilizado para transferir tanto datos como instrucciones.
+
+Tiene 3 partes principales:
+
+Unidad de entrada =====>  Unidad de control: es la parte de la computadora que dirige las operaciones de la misma.
+                            Unidad Aritmetico Logica: es la parte de la computadora que realiza las operaciones aritmeticas y  logicas.
+Unidad de salida  <=====  Memoria: es la parte de la computadora que almacena datos e instrucciones.
+
+
+                Microcontroladores Programables
+
