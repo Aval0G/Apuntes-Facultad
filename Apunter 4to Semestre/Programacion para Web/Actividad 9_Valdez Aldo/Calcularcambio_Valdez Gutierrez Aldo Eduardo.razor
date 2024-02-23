@@ -1,0 +1,52 @@
+﻿@page "/cambio"
+
+<PageTitle>Cambio de Monedas</PageTitle>
+
+<h1>Calculadora de cambio de moneda</h1>
+
+<h3>Ingresa la cantidad</h3>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: transparent;">Pesos</span>
+    </div>
+    <input style="background-color: trans;" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" @bind="cantidad" />
+</div>
+
+<button type="button" class="btn btn-primary" @onclick="Convertir">Convertir</button>
+
+<h3>Cantidades convertidas</h3>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: transparent;">Dolares</span>
+    </div>
+    <input readonly type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" @bind-value="dolares" @bind-value:event="oninput" />
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: transparent;">Euros</span>
+    </div>
+    <input readonly type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" @bind-value="euros" @bind-value:event="oninput" />
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: transparent;">Libras</span>
+    </div>
+    <input readonly type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" @bind-value="libras" @bind-value:event="oninput" />
+</div>
+
+@code {
+    private double cantidad;
+    private double euros;
+    private double dolares;
+    private double libras;
+
+    private void Convertir()
+    {
+        euros = Math.Round(cantidad * 0.054, 3);
+        dolares = Math.Round(cantidad * 0.058, 3);
+        libras = Math.Round(cantidad * 0.046, 3);
+    }
+}
