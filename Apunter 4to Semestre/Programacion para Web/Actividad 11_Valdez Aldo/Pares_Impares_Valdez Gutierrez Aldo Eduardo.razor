@@ -1,0 +1,94 @@
+﻿@page "/pares_impares"
+
+<PageTitle>Pares e Impares</PageTitle>
+
+<h1>Listas de números</h1>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: transparent;">Numero 1</span>
+    </div>
+    <input style="background-color: transparent;" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" @bind="@Numero1" />
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: transparent;">Numero 2</span>
+    </div>
+    <input style="background-color: transparent;" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" @bind="@Numero2" />
+</div>
+
+<button type="button" class="btn btn-primary" @onclick="ParEImpar">Calcular</button>
+
+<br /> <br />
+
+<div style="display: flex;">
+    <div style="width: 40rem; font-size: 22px; padding: 12px" >
+        <h2>Pares</h2>
+        @if (numerosPares != null)
+        {
+            <table class="table table-striped">
+                <thead>
+                </thead>
+                <tbody>
+                    @foreach (var numero in numerosPares)
+                    {
+                        <tr>
+                            <td>@numero</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+    <div style="width: 40rem; font-size: 22px; padding: 12px">
+        <h2>Impares</h2>
+        @if (numerosImpares != null)
+        {
+            <table class="table table-striped">
+                <thead>
+                </thead>
+                <tbody>
+                    @foreach (var numero in numerosImpares)
+                    {
+                        <tr>
+                            <td>@numero</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+
+</div>
+
+
+@code {
+    private double Numero1;
+    private double Numero2;
+    private List<double> numerosPares;
+    private List<double> numerosImpares;
+    private double limiteInferior;
+    private double limiteSuperior;
+
+    private void ParEImpar()
+    {
+        numerosPares = new List<double>();
+        numerosImpares = new List<double>();
+
+        limiteInferior = Numero1 < Numero2 ? Numero1 : Numero2;
+        limiteSuperior = Numero1 > Numero2 ? Numero1 : Numero2;
+
+        for (double i = limiteInferior; i <= limiteSuperior; i++)
+        {
+            if (i % 2 == 0)
+            {
+                numerosPares.Add(i);
+            }
+            else
+            {
+                numerosImpares.Add(i);
+            }
+        }
+    }
+}
