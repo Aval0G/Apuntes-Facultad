@@ -1,0 +1,68 @@
+﻿@page "/primos"
+
+<PageTitle>Numeros primos</PageTitle>
+
+<h1>Numeros primos</h1>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: transparent;">Numero Entero</span>
+    </div>
+    <input style="background-color: transparent;" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" @bind="@NumeroEntero" />
+</div>
+
+<button type="button" class="btn btn-primary" @onclick="CalcularPrimos">Calcular</button>
+
+<br /> <br />
+
+<div style="display: flex;">
+    <div style="width: 40rem; font-size: 22px; padding: 12px" >
+        <h2>Primos</h2>
+        @if (numerosPrimos != null)
+        {
+            <table class="table table-striped">
+                <thead>
+                </thead>
+                <tbody>
+                    @foreach (var numero in numerosPrimos)
+                    {
+                        <tr>
+                            <td>@numero</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+
+</div>
+
+
+@code {
+    private double NumeroEntero;
+    private List<double> numerosPrimos;
+
+    private void CalcularPrimos()
+    {
+        numerosPrimos = new List<double>();
+        for (int i = 2; i <= NumeroEntero; i++)
+        {
+            if (EsPrimo(i))
+            {
+                numerosPrimos.Add(i);
+            }
+        }
+
+        bool EsPrimo(int numero)
+        {
+            for (int i = 2; i < numero; i++)
+            {
+                if (numero % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+}
