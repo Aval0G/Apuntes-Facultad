@@ -1,0 +1,71 @@
+﻿@page "/dias-mes"
+@inject HttpClient Http
+
+<PageTitle>Calculadora Dias por mes</PageTitle>
+
+<h1>Ingresa el mes y año para conocer cuantos dias tiene:</h1>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Mes</label>
+    </div>
+    <select class="custom-select" id="inputGroupSelect01" @bind="mes">
+        <option selected>Presiona para elegir el mes</option>
+        <option value="1">Enero</option>
+        <option value="2">Febrero</option>
+        <option value="3">Marzo</option>
+        <option value="4">Abril</option>
+        <option value="5">Mayo</option>
+        <option value="6">Junio</option>
+        <option value="7">Julio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+    </select>
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default" style="background-color: transparent;">Año</span>
+    </div>
+    <input style="background-color: trans;" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" @bind="año" />
+</div>
+
+<button type="button" class="btn btn-primary" @onclick="Calcular">Calcular dias por mes</button>
+
+<br /> <br 
+
+<div class="alert alert-primary" role="alert">
+    <p>@resultado</p>
+</div>
+
+    @code {
+        private int año;
+        private int mes;
+        private string resultado = " ";
+
+        private void Calcular()
+        {
+            if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12)
+            {
+                resultado = "El mes " + mes + " del año " + año + " tiene 31 dias";
+            }
+            else if (mes == 4 || mes == 6 || mes == 9 || mes == 11)
+            {
+            resultado = "El mes " + mes + " del año " + año + " tiene 30 dias";
+            }
+            else if (mes == 2)
+            {
+            if (año % 4 == 0 && año % 100 != 0 || año % 400 == 0)
+            {
+                resultado = "El mes " + mes + " del año " + año + " tiene 29 dias";
+            }
+            else
+            {
+                resultado = "El mes " + mes + " del año " + año + " tiene 28 dias";
+            }
+        }
+    }
+}
