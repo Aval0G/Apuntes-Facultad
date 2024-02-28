@@ -1,10 +1,9 @@
-Aributos del Buen software
+Atributos del Buen software
 
 Mantenibilidad: Facilidad para corregir errores, adaptar el software a nuevas necesidades y mejorar su rendimiento.
 Confiabilidad: Capacidad del software para mantener su rendimiento bajo condiciones normales y anormales.
 Eficiencia: Capacidad del software para utilizar los recursos del sistema de manera eficiente.
 Aceptabilidad: Capacidad del software para ser aceptado por el usuario.
-
 
 Actividades generales de la produccion de software
 
@@ -18,4 +17,31 @@ Schwalbe(Emprendimiento temporal para crear un producto, servicio o resultado un
 Sommerville(Esfuerzo temporal que se lleva a cabo para crear un software unico, implica la gestion)
 
 PEMBOK
-¿Cuanto tiempo se va tardar el proyecto? ¿Que recursos se necesitan? ¿Cual es su alcance? 
+¿Cuanto tiempo se va tardar el proyecto? ¿Que recursos se necesitan? ¿Cual es su alcance?
+
+Factores que influyen en un proyecto
+*Viabilidad
+*Tiempo
+\*Recursos
+
+Objetivos de un proyecto
+\*Un producto
+
+Un proyecto tiene un inicio o un final si no lo tiene es un (programa)
+
+Los requerimientos deben definir metricas
+Especificaciones: que ocupa el sistema para ser eficiente
+
+Requerimientos no funcionales: (como debe ser el sistema) desempeño del sistema, etc
+Requerimientos funcionales: (como funciona el sistema) lo que el cliente quiere
+
+Etnografia: proceso en el cual visitas al cliente u los usuarios finales para obtener requerimientos de ellos
+
+Alcance == eficiencia del sistema
+
+Restriccion: es un "Siempre y Cuando"
+
+WBS: Work Breakdown structure
+
+Proyecto de inversion: proyecto donde se busca fabricar un producto o prestar un servicio buscando un beneficio economico o rentabilidad futura 
+
