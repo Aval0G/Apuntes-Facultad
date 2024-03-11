@@ -1,0 +1,100 @@
+﻿@page "/tareas"
+
+<div class="container">
+    <h1>Lista de tareas</h1>
+
+
+    <form @onsubmit="AgregarActividad" class="form-inline mt-3">
+        <label for="nombreActividad" class="mr-sm-2">Nombre de la actividad:</label>
+        <input type="text" id="nombreActividad" name="nombreActividad" class="form-control mr-sm-2" @bind-value="nuevaActividadNombre">
+        <br>
+        <label for="descripcionActividad" class="mr-sm-2">Descripción de la actividad:</label>
+        <input type="text" id="descripcionActividad" name="descripcionActividad" class="form-control mr-sm-2" @bind-value="nuevaActividadDescripcion">
+        <br>
+        <button type="submit" class="btn btn-primary">Agregar</button>
+    </form>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-6">
+        <h2>Por Hacer</h2>
+        <ul class="list-group">
+            @foreach (var actividad in ActividadesPorHacer)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <b>Nombre:</b> @actividad.Nombre
+                        <br>
+                        <b>Descripción:</b> @actividad.Descripción
+                    </div>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-success mr-2" @onclick="@(() => MarcarActividadRealizada(actividad))">Realizada</button>
+                        <button type="button" class="btn btn-danger" @onclick="@(() => EliminarActividad(actividad))">Eliminar</button>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="col-md-6">
+        <h2>Realizado</h2>
+        <ul class="list-group">
+            @foreach (var actividad in ActividadesRealizadas)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <b>Nombre:</b> @actividad.Nombre
+                        <br>
+                        <b>Descripción:</b> @actividad.Descripción
+                    </div>
+                    <button type="button" class="btn btn-danger" @onclick="@(() => EliminarActividad(actividad))">Eliminar</button>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+@code {
+    private List<Actividad> ActividadesPorHacer = new List<Actividad>();
+    private List<Actividad> ActividadesRealizadas = new List<Actividad>();
+    private string nuevaActividadNombre;
+    private string nuevaActividadDescripcion;
+
+    private void AgregarActividad()
+    {
+        if (!string.IsNullOrEmpty(nuevaActividadNombre) && !string.IsNullOrEmpty(nuevaActividadDescripcion))
+        {
+            ActividadesPorHacer.Add(new Actividad { Nombre = nuevaActividadNombre, Descripción = nuevaActividadDescripcion });
+            nuevaActividadNombre = string.Empty;
+            nuevaActividadDescripcion = string.Empty;
+        }
+    }
+
+    private void MarcarActividadRealizada(Actividad actividad)
+    {
+        ActividadesPorHacer.Remove(actividad);
+        ActividadesRealizadas.Add(actividad);
+    }
+
+    private void EliminarActividad(Actividad actividad)
+    {
+        if (ActividadesPorHacer.Contains(actividad))
+        {
+            ActividadesPorHacer.Remove(actividad);
+        }
+        else if (ActividadesRealizadas.Contains(actividad))
+        {
+            ActividadesRealizadas.Remove(actividad);
+        }
+    }
+
+    public class Actividad
+    {
+        public string Nombre { get; set; }
+        public string Descripción { get; set; }
+    }
+}
+
+
+
+

@@ -1,0 +1,132 @@
+﻿@page "/canciones"
+
+<h1>Lista de Canciones</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Agregar Canción</h5>
+                <input type="text" class="form-control" @bind="nuevaCancionTitulo" />
+                <button class="btn btn-primary mt-2" @onclick="AgregarCancion">Agregar</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Filtrar Canciones</h5>
+                <input type="text" class="form-control" @bind="filtro" placeholder="Filtrar por palabra clave" />
+            </div>
+        </div>
+        <table class="table mt-2">
+            <thead>
+                <tr>
+                    <th>
+                        <button class="btn btn-link" @onclick="OrdenarAscendente">▲</button>
+                        Título
+                        <button class="btn btn-link" @onclick="OrdenarDescendente">▼</button>
+                    </th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cancion in CancionesFiltradas)
+                {
+                    <tr>
+                        <td>@cancion.Titulo</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm" @onclick="() => EliminarCancion(cancion)">Eliminar</button>
+                            <button class="btn btn-primary btn-sm" @onclick="() => EditarCancion(cancion)">Editar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@if (cancionEditando != null)
+{
+    <div class="modal" tabindex="-1" style="display:block;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar Canción</h5>
+                    <button type="button" class="btn-close" @onclick="CancelarEdicion"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" @bind="cancionEditando.Titulo" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CancelarEdicion">Cancelar</button>
+                    <button type="button" class="btn btn-primary" @onclick="GuardarEdicion">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<Cancion> canciones = new List<Cancion>();
+    private string nuevaCancionTitulo = "";
+    private string filtro = "";
+    private Cancion cancionEditando;
+
+    private IEnumerable<Cancion> CancionesFiltradas =>
+        string.IsNullOrWhiteSpace(filtro) ? canciones :
+            canciones.Where(c => c.Titulo.Contains(filtro, StringComparison.OrdinalIgnoreCase));
+
+    private void AgregarCancion()
+    {
+        if (!string.IsNullOrWhiteSpace(nuevaCancionTitulo))
+        {
+            canciones.Add(new Cancion { Titulo = nuevaCancionTitulo });
+            nuevaCancionTitulo = "";
+        }
+    }
+
+    private void EliminarCancion(Cancion cancion)
+    {
+        canciones.Remove(cancion);
+    }
+
+    private void OrdenarAscendente()
+    {
+        canciones = canciones.OrderBy(c => c.Titulo).ToList();
+    }
+
+    private void OrdenarDescendente()
+    {
+        canciones = canciones.OrderByDescending(c => c.Titulo).ToList();
+    }
+
+    private void EditarCancion(Cancion cancion)
+    {
+        cancionEditando = cancion;
+    }
+
+    private void CancelarEdicion()
+    {
+        cancionEditando = null;
+    }
+
+    private void GuardarEdicion()
+    {
+        cancionEditando = null;
+    }
+
+    public class Cancion
+    {
+        public string Titulo { get; set; }
+    }
+
+protected override void OnInitialized()
+    {
+        canciones.Add(new Cancion { Titulo = "La guitarra de lolo" });
+        canciones.Add(new Cancion { Titulo = "Hombre lobo en paris" });
+        canciones.Add(new Cancion { Titulo = "Morena mia" });
+        canciones.Add(new Cancion { Titulo = "Enamorado tuyo" });
+        canciones.Add(new Cancion { Titulo = "La cucaracha" });
+    }
+}
