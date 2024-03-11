@@ -1,0 +1,73 @@
+Software: Programas + documentacion. Pueden ser a medida o generales.  
+Atributos de buen software: mantenible, confiable, utilizable. Debe hacer lo que se necesita que haga y con buen rendimiento
+Ingenieria de software: ingenieria que se encarga de la produccion de software.
+Actividades fundamentales de la ing. software: especificacion, desarrollo, validacion, evolucion.
+Desafios: creciente diversidad, demandas de tiempo y calidad
+Principales costos: costos de desarrollo, costos de prueba, costos de mantenimiento/evolucion
+
+ATRIBUTOS DE SOFTWARE
+Secure: no permitir que nadie no autorizado acceda a la informacion
+Safe: que el software no cause daño al usuario
+Reliable (Confiabilidad): que el software funcione como se espera
+Mantenibilidad: que el software sea facil de mantener y evolucionar
+Eficiente: usar menor tiempo posible
+Eficaz: hace lo que debe hacer
+Aceptabilidad: que el software haga lo que el cliente necesita 
+Compatibilidad: que el software funcione en diferentes sistemas
+
+-Al principio, hay mucha incertidumbre en el proyecto, y a medida que avanza, se va reduciendo.
+-Mucha incertidumbre causa expectativas no realistas. Se necesita un plan correcto para reducir la incertidumbre.
+
+Proyecto de software: esfuerzo temporal que busca una solución útil y efectiva para un problema específico. El resultado es un producto, servicio o resultado único que se crea con expectativas, gestión, recursos, planificiación y desarrollo necesarios.
+
+Un proyecto de software se determina por: alcance, tiempo, recursos
+
+Modelo: es un esquema ideal, es general, no es específico. Dice lo que debo hacer, pero no cómo
+Metodología: es un conjunto de técnicas, procedimientos y herramientas especificas que se utilizan para llevar a cabo un proyecto. Es específico, dice como hacer algo
+
+Tipos de productos de software: sistemas a la medida, genéricos, híbridos/configurables
+  Sistema hibrido/configurable: software generico se tiene que configurar para que funcione en un entorno específico
+
+Modelos de produccion de software: 
+  -Cascada: secuencial, cada fase se inicia cuando la anterior termina. La documentacion es esencial. Es para software complejo con muchas restricciones
+  -Incremental: se divide en partes, se va desarrollando una parte a la vez. El foco es la eficiencia (usar el menor tiempo posible)
+  -Reutilizacion de componentes: se reutilizan componentes de otros proyectos de software para solo enfocarse en lo que es nuevo
+
+  -Agil: se divide en ciclos, cada ciclo es una iteracion
+  -Espiral: se divide en ciclos, cada ciclo es una iteracion
+  -Prototipos: se hace un prototipo y se va modificando hasta que el cliente este conforme
+
+Metodologias de produccion de software:
+  -Scrum: se divide en ciclos, cada ciclo es una iteracion
+  -Kanban: se usa un indicador visual para ver el progreso del proyecto
+
+Ingenieria de requerimientos:
+  Los requerimientos son las necesidades del cliente. Deben tener un sistema de seguimiento y verificacion
+  El proposito de los requerimientos es definir MÉTRICAS
+  Tipos de requerimientos:
+    Funcionales: lo que el sistema debe hacer segun el CLIENTE
+    No funcionales: restricciones del sistema (lo que necesita el sistema para funcionar), definidos por el DESARROLLADOR
+  Proceso de ingenieria de requerimientos(IR):
+    -Descubrir los requerimientos (entrevistas, encuestas, observacion, investigacion, etc)
+    -Clasificar y organizar los requerimientos
+    -Priorizar y negociar los requerimientos
+    -Especificar los requerimientos
+  WBS: Work Breakdown Structure, documento donde  se detallan los requerimientos del proyecto, ademas de otras cosas como los tiempos, los entregables, etc
+
+El proyecto debe ser VIABLE (ser posible de realizar y que valga la pena hacerlo)
+
+Para ver si un proyecto es viable, se ncesitan analisis: mercado, tecnico y operacion, economico y financiero, socioeconomico
+
+Caso de negocio: planteo inicial de un proyecto
+
+Plan de negocio: se quiere saber si el proyecto es rentable
+  Lienzo de modelo de negocio:
+    1. Propuesta de valor: que problema resuelve, que necesidad satisface
+    2. Segmento de clientes: a quien va dirigido
+    3. Relacion con el cliente: como se relaciona con el cliente
+    4. Canales de distribucion: como se distribuye (eg: redes sociales, publicidad, etc)
+    5. Actividades clave: que actividades son necesarias para que el negocio funcione
+    6. Recursos clave: que recursos son necesarios para que el negocio funcione
+    7. Aliados clave: que asociaciones son necesarias para que el negocio funcione
+    8. Fuentes de ingresos: de donde provienen los ingresos
+    9. Estructura de costos: que costos tiene el negocio

@@ -1,0 +1,78 @@
+Switch / conmutador : de capa 2 (enlace de datos), solo lee la MAC
+Router : de capa 3 (red), lee la IP
+
+Un centro de datos moderno organiza jerárquicamente servidores en pilas dentro de un rack, con un conmutador top-of-the-rack (ToR) que los interconecta. Los ToR se connectan a "aggregation switch" y estos a su vez se conectan a un "core switch" (root)
+
+Los centros de Google tienen 6 capas de seguridad
+
+Trafico Este-Oeste (servidor a servidor): entre los mismos servidores dentro del centro de datos
+Trafico Norte-Sur (usuario a servidor): entre el centro de datos y los usuarios exteriores
+La mayoria de trafico en un centro de datos va Este-Oeste (entre servidores) y no Norte-Sur (hacia el exterior / los usuarios). 
+
+Tres planos: datos, control y administración
+
+Plano de datos (plano que mueve los datos de un lado a otro de forma fisica): 
+  - Puertos físicos
+  - Tabla de direcciones MAC
+  - Manipulación y almacenamiento de paquetes
+Plano de control (mantiene la tabla de direcciones MAC actualizada):
+  - Mantiene vigente la información
+  - Procesa protocolos pertinentes
+  - Administra la topología de la red
+Plano de administración (permite la configuración y el monitoreo de la red):
+  - Configuracion y monitoreo del conmutador
+  - Se usan mecanismos de comunicacion (SSH, SNMP, etc) 
+      SNMP: Simple Network Management Protocol
+
+Enrutamiento basado en software: se implementa la capa lógica de IP , con tabla de Enrutamiento y puentes que interconectan segmentos LAN.
+
+Tabla de conmutación/reenvio: tabla que contiene las direcciones MAC de los dispositivos conectados a un conmutador. Se usa para reenviar paquetes a los dispositivos correctos.
+ASIC (Application-Specific Integrated Circuit): permite implementar funciones de hash de alta velocidad
+CAM (Content Addressable Memory): permite buscar en alta velocidad direcciones MAC en la tabla de conmutación. Debuta con el conmutador Ethernet. Despues de unos años, CAM es posible en routers
+
+Reglas de conmutacion genericas programables:
+  -Recepcion de paquetes
+  -Base de datos de reenvio
+  -Transmision de paquetes
+  -Filtro de egreso
+  -Traduccion de paquetes
+  -Filtro de ingreso
+
+Control de capa 2:
+  -la tabla L2 usa MAC
+  -deben ser libres de ciclos, por lo que se usa STP (Spanning Tree Protocol) y otros protocolos que le siguieron
+
+Control de capa 3: 
+  -la tabla L3 usa IP
+  -se usan protocolos de enrutamiento (RIP (Routing INformation Protocol), OSPF, BGP, etc)
+
+La separacion de plano de control es una de las mayores propuestas de las redes definidas por software (SDN)
+
+-Se han implementado otras estrategias para toma de decisiones granulares:
+  * segregar trafico a puertos TCP con misma IP
+  * enrutar distintas clases de QoS
+
+SDN (Software Defined Network) / Redes definidas por software: arquitectura de red moderna diseñada para resolver problemas de escalabilidad y flexibilidad. 
+  -separacion de plano de control y datos
+  -todos los conmutadores en la red se conectan a un controlador central que toma las decisiones de switcheo por los conmutadores
+  -el controlador es un servidor programado
+
+CARACTERISTICAS DE SDN:
+  -Separacion de planos: separacion de planos de envio y control. Procesamiento de paquetes en plano de envio. Logica y algoritmos en plano de control
+  -dispositivos simples y control centralizado: los switches se hacen "tontos", el control lo tiene un servidor central
+  -automatizacion y virtualizacion de red: se programan APIs y abstracciones de red por software
+  -apertura: codigo abierto y disponible para desarrolladores y fabricantes
+
+  -En vez de tablas de enrutamiento, en SDN los switches tienen tablas de flujo solo para saber donde enviar sus mensajes (y nada mas)
+
+OPERACION DE SDN:
+  -Flows: conjunto de paquetes a transferir
+  -Flow table: Dispositivos obedecen a una tabla de flujo para envio de paquetes
+  -OpenFlow: dispositivos y controlador usan OpenFlow para comunicarse
+  -Controlador: el controlador tiene vista global y provee APIs para interactuar
+  -App: Las aplicaciones le dicen al controlador qué hacer con los distintos flujos
+
+DISPOSITIVOS SDN:
+  -Usan tablas de flujo para evaluar paquetes entrantes y determinar la accion a tomar
+  -Tablas de flujo tienen ENTRADAS PRIORIZADAS, van desde acciones especificas a genéricas
+  -Se tienen tablas de envio de capa 2 y capa 3 implementadas como TCAMs y CAMs

@@ -1,0 +1,127 @@
+Ingenieria Financiera (IF): Ingeniera con objetivos:
+  - Crear estructura financiera (un esqueleto con estrategias financieras y perfil financiero)
+      *Perfiles de emprendedor:
+        - Conservador: gestion depende de las ventas. Decisiones hechas por el emprendedor
+        - De alto riesgo: financiamiento extremo (deuda, capital, etc). Si no hay recursos, se buscan inversionistas. Decisiones acorde a los principales inversionistas.
+  - Protección de riesgos financieros
+      Riesgos financieros: inflacion, competencia, internacionalizacion, etc. 
+
+  
+  -Ambitos de aplicabilidad:
+    -Proyectos de Inversion
+    -Finanzas
+    -Asesoria / Consultoria
+    -Alianzas / Participacion
+
+CRECIMIENTO Y DESARROLLO TECNOLOGICO A NIVEL NACIONAL
+  Causas:
+    Estimulos fiscales: estimulos para reducir/eliminar el pago de impuestos para impulsar la economia
+    Politica publica: politicas que buscan impulsar la economia
+    Instituciones academicas con formacion tecnologica
+    Infraestructura empresarial: todas las empresas requieren de tecnologia. Algunas limitantes son presupuesto, necesidad, tiempo, etc.
+    Inversion nacional y extranjera
+    Requerimientos de la sociedad
+    Importacion de la tecnologia
+
+  Consecuencias
+    Productividad: Incrementar el numero de productos y servicios en un determinado periodo
+    Competitividad: Tener la capacidad de competir en el mercado al tener caracteristicas con valor unico (diferenciacion), como calidad, precio, o alguna funcionalidad especial
+    Crecimiento PIB: El PIB es el valor monetario de los bienes y servicios finales producidos por una economia en un periodo determinado (solo mercado formal)
+    Incremento del empleo
+    Incremento del numero de empresas en desarrollo tecnologico
+    Posicionamiento internacional en tecnologia
+    +ESTABILIDAD/VOLATILIDAD en la bursatilización de empresas tecnologicas
+      bursatilización: cuando una empresa se vuelve publica y se vende en la bolsa de valores
+
+El MERCADO es un "espacio" físico o virtual donde se compra-vende bienes y servicios. Interactuan y participan varios agentes, como OFERENTES (ofrecen) y DEMANDANTES (buscan un bien). Conocer el mercado orienta las acciones para comercializar nuestro producto
+
+COMERCIALIZACION: conjunto de funciones que se desarrollan desde que el bien se produce hasta que llega al consumidor final. Es un mecanismo de coordinacion para transferencias e intercambios de los agentes que participan en la cadena productiva. Funciones:
+  COMPRAR: buscar y evaluar bienes/servicios
+  VENDER: promover el producto para obtener ganancia
+  TRANSPORTAR: traslado de bienes para promover su venta/compra
+  FINANCIAR: proveer el efectivo y credito necesario para operar como empresa o consumidor
+  ASUMIR RIESGOS: soportar las incertidumbres de la comercializacion
+
+MARKETING: proceso para crear, comunicar, entregar e intercambiar ofertas que tienen valor para los cliente
+
+SEGMENTACION DEL MERCADO: Se divide el mercado para especificar las caracteristicas que mis clientes tienen para poder vender mi producto. Algunas caracteristicas:
+  PRECIO (dinero)
+  COSTO (tiempo, esfuerzo, recursos)
+  RENTABILIDAD (diferencia del precio menos el costo)
+  VALOR AGREGADO (precio que el consumidor esta dispuesto a pagar por los atributos del producto)
+
+Tipos de mercados segun la oferta-demanda
+                       |----------------------|----------------------|---------------------|
+  |--------------------|  MUCHOS VENDEDORES   | POCOS VENDEDORES     | UN SOLO VENDEDOR    |
+  | MUCHOS COMPRADORES | competencia perfecta | oligopolio           | monopolio           |
+  | POCOS COMPRADORES  | oligopsonio          | oligopolio bilateral | monopolio parcial   |
+  | UN SOLO COMPRADOR  | monopsonio           | monopsonio parcial   | monopolio bilateral |
+  |--------------------|----------------------|----------------------|---------------------|
+
+Tipos de mercados segun sus otros criterios:
+  REGULACION:
+    -mercado regulado: el gobierno controla los precios y la cantidad de bienes y servicios
+    -mercado libre/desregulado: el gobierno no controla los precios y la cantidad de bienes y servicios
+  
+  VOLUMEN:
+    -mercado mayorista: se venden productos en grandes cantidades
+    -mercado minorista: se venden productos en pequeñas cantidades
+  
+  CARACTERISTICAS DE LOS COMPRADORES:
+    -mercado de consumo: los compradores adquieren bienes y servicios para su uso personal
+    -mercado industrial: los compradores adquieren bienes y servicios para producir otros bienes y servicios
+      -compradores industriales: empresas, gobierno, instituciones, etc.
+      -compradores intermediarios: mayoristas, minoristas, etc. que adquieren bienes y servicios para revenderlos
+    -mercados institucionales: los compradores adquieren bienes y servicios para su uso en una institucion
+
+  NATURALEZA DE LOS PRODUCTOS: agropecuarios, de pesca, materias primas, productos industriales, manufacturados, servicios, etc.
+
+  POR UBICACION GEOGRAFICA O AMBITO:
+    -mercado local o municipal
+    -mercado interior o nacional
+    -mercado de transito
+    -mercado exterior o internacional
+
+  OTROS TIPOS:
+    -mercado de capitales o financiero: se venden acciones, bonos, etc.
+    -mercado de ocasion: se venden productos en un tiempo determinado, como segunda mano, fuera de moda, etc
+    -mercado negro: se venden productos ilegales
+
+Sistema de costos: informa la estructura de costes de una empresa. Proceso de asignacion de importes a todo lo que la empresa ofrece al consumidor. Se llama "sistema" porque implica un enfoque estructurado para RECOPILAR, CLASIFICAR, ASIGNAR Y ANALIZAR costos
+  Activo: Los bienes
+  Pasivo: todas deudas, compromisos a una tercera persona
+
+Los datos que necesitan los usuarios son:
+  -Elementos de costo del producto
+  -Relacion con la produccion
+  -Relacion con el volumen
+  -Capacidad para asociarlos
+  -Departamento con el que se comunicaron
+  -Actividades realizadas
+  -Periodo en que se van a cargar costos de ingreso
+  -Relacion con la planeacion, control y toma de decisiones
+
+Costo: valor sacrificado para adquirir bienes o servicios reduciendo activos o incurriendo en pasivos al obtener beneficios 
+  Costos total = costos variables + costos fijos
+  Costos variables (cambian): materia prima, costo de distribucion, materiales directos, mano de obra directa
+  Costos fijos (siguen igual): administracion, financiero, amortizacion, impuestos, gastos generales (alquiler, slarios, etc)
+
+COSTO VS GASTO:
+  Costo: para obtener INGRESOS, permitiendo mantener la actividad de las empresas y se clasifican como INVERSIONES. Solo se relaciona con PRODUCIR EL SERVICIO
+  Gasto: hacen que la empresa sea OPERATIVA, NO llevan asociados retornos de capital. Tiene que ver con la OPERATIVIDAD DE LA EMPRESA
+
+Gastos operacionales: a favor de la empresa para crear ingresos, por lo que debe estar en el Estado de Resultados.
+  Gastos de administracion: gastos de gerencia como sueldos, sevicios de luz, asesorías, etc.
+  Gastos de venta: gastos para colocar los productos al servicio del cliente, como: salarios de vendedores, publicidad, etc.
+Gastos no operacionales: no implican la operacion normal del negocio, como interés sobre dinero prestado, cargos por obsolescencia de equipos, etc
+
+Tipos de pronostico de ventas:
+  Cualitativos: 
+    -opinion de expertos 
+    -metodo Delphi: se selecciona un panel de expertos para responder un cuestionario, de los que se sacan conclusiones y se vuelven a convertir en cuestionario para los expertos, así varias veces
+    -estudio de expectativs del comprador
+    -analogia historica
+  Cuantitativos: 
+    -tasa de crecimiento medio: (tasa de crecimiento de ventas) * (ingresos percibidos en el periodo anterior) 
+    -run rate: (total de ingresos hasta la fecha) / (numero de periodos durante los que se consiguieron esos ingresos)
+    -tasa de crecimeinto: (venta de periodo actual) / (venta de periodo anterior)
